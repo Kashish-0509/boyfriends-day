@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>For My Favourite Person ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+     <video class="background-video" autoplay muted loop playsinline>
+        <source src="Vedio/Vedio.mp4" type="video/mp4">
+    </video>
+
+    <div class="video-overlay"></div>
+
+    <!-- Floating Hearts -->
+    <div class="hearts"></div>
+
+
+    <!-- WELCOME SCREEN -->
+
+    <section id="welcome" class="screen active">
+
+        <div class="welcome-box">
+
+            <div class="heart">❤️</div>
+
+            <h1>Hey You...</h1>
+
+            <p>
+                I made something special for you.
+            </p>
+
+            <p class="small-text">
+                But there's one little rule...
+            </p>
+
+            <p>
+                You have to open every card
+                to reach the final surprise. 🥺
+            </p>
+
+            <button onclick="startJourney()">
+                Start Journey 💌
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- CARD SECTION -->
+
+    <section id="cards" class="screen">
+
+        <div class="progress">
+            <span id="progressText">Card 1 of 7</span>
+        </div>
+
+
+        <div class="card-container">
+
+            <div class="love-card">
+
+                <div class="card-number" id="cardNumber">
+                    💌 01
+                </div>
+
+                <h2 id="cardTitle">
+                    Our Beginning
+                </h2>
+
+                <p id="cardText">
+                    Do you remember how it all started?
+                </p>
+
+                <div id="extraContent"></div>
+
+                <button id="openButton" onclick="openCard()">
+                    Open Card ❤️
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- FINAL SCREEN -->
+
+    <section id="final" class="screen">
+
+        <div class="final-box">
+
+            <div class="big-heart">
+                ❤️
+            </div>
+
+            <h1>You Made It...</h1>
+
+            <p class="final-intro">
+                Okay... this one is different.
+            </p>
+
+            <button onclick="revealMessage()">
+                Open My Heart ❤️
+            </button>
+
+            <div id="finalMessage" class="hidden">
+
+                <p>
+                    I'm sorry for the times I've hurt you,
+                    especially recently.
+                </p>
+
+                <p>
+                    I never want my words or actions to make
+                    you feel like you aren't loved.
+                </p>
+
+                <p>
+                    Things haven't always been perfect between us,
+                    but one thing I know for sure is that
+                    I love you.
+                </p>
+
+                <p>
+                    I promise I'll try to understand you better,
+                    communicate better, and be more careful
+                    with your feelings.
+                </p>
+
+                <p>
+                    I don't expect everything to become perfect
+                    overnight.
+                </p>
+
+                <p>
+                    I just want us to figure things out together
+                    and keep choosing each other.
+                </p>
+
+                <h2>
+                    Happy Boyfriend's Day ❤️
+                </h2>
+
+                <p class="signature">
+                    <div class="signature">
+    From Kashish Gupta (Baunibadmosh) ❤️
+    <br>
+    to Saharsh Chhimwal (Mota) 🫶🏻
+</div>
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

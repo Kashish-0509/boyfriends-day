@@ -1,0 +1,1021 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #ffe4ec,
+        #ffd6e5,
+        #fff0f5
+    );
+
+    color: #5a3040;
+
+    overflow-x: hidden;
+}
+
+
+
+/* Screens */
+
+.screen {
+    display: none;
+
+    min-height: 100vh;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 25px;
+}
+
+
+.screen.active {
+    display: flex;
+}
+
+
+
+/* Welcome */
+
+.welcome-box {
+
+    width: 100%;
+    max-width: 500px;
+
+    text-align: center;
+
+    background: rgba(255,255,255,0.75);
+
+    padding: 50px 30px;
+
+    border-radius: 30px;
+
+    box-shadow:
+        0 20px 50px rgba(120, 40, 70, 0.15);
+
+    backdrop-filter: blur(10px);
+}
+
+
+.heart {
+    font-size: 70px;
+
+    animation: heartbeat 1.5s infinite;
+}
+
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+
+    font-size: 55px;
+
+    margin: 15px 0;
+
+    color: #b8325c;
+}
+
+
+.welcome-box p {
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    margin: 10px 0;
+}
+
+
+.small-text {
+    font-size: 15px !important;
+
+    color: #9b6878;
+}
+
+
+
+/* Buttons */
+
+button {
+
+    border: none;
+
+    background: #d94f76;
+
+    color: white;
+
+    padding: 14px 28px;
+
+    border-radius: 30px;
+
+    font-size: 16px;
+
+    font-family: 'Poppins', sans-serif;
+
+    cursor: pointer;
+
+    margin-top: 25px;
+
+    transition: 0.3s;
+
+    box-shadow: 0 8px 20px rgba(217,79,118,0.25);
+}
+
+
+button:hover {
+
+    transform: translateY(-3px);
+
+    background: #c63e66;
+
+}
+
+
+
+/* Progress */
+
+.progress {
+
+    position: absolute;
+
+    top: 25px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    font-size: 14px;
+
+    color: #9b526b;
+}
+
+
+
+/* Cards */
+
+.card-container {
+
+    width: 100%;
+
+    max-width: 500px;
+
+}
+
+
+.love-card {
+
+    background: white;
+
+    padding: 45px 30px;
+
+    border-radius: 30px;
+
+    text-align: center;
+
+    box-shadow:
+        0 20px 50px rgba(120,40,70,0.15);
+
+    animation: cardAppear 0.6s ease;
+
+}
+
+
+.card-number {
+
+    color: #d94f76;
+
+    font-size: 18px;
+
+    margin-bottom: 15px;
+}
+
+
+.love-card h2 {
+
+    font-family: 'Dancing Script', cursive;
+
+    font-size: 40px;
+
+    color: #b8325c;
+
+    margin-bottom: 20px;
+}
+
+
+.love-card p {
+
+    font-size: 17px;
+
+    line-height: 1.7;
+}
+
+
+/* Cute Memory Photo */
+
+.memory-photo {
+
+    width: 90%;
+
+    max-height: 320px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    margin: 25px auto;
+
+    display: block;
+
+    padding: 10px;
+
+    background: white;
+
+    box-shadow:
+        0 10px 25px rgba(120,40,70,0.18);
+
+    transform: rotate(-2deg);
+
+    transition: 0.4s ease;
+}
+
+
+.memory-photo:hover {
+
+    transform: rotate(0deg) scale(1.03);
+
+}
+.photo-caption {
+
+    font-family: 'Dancing Script', cursive;
+
+    font-size: 25px !important;
+
+    color: #b8325c;
+
+    margin-top: 5px !important;
+
+    margin-bottom: 20px !important;
+
+    transform: rotate(-1deg);
+
+}
+
+.memory-gallery {
+    margin-top: 20px;
+}
+
+
+.memory-counter {
+
+    font-size: 14px;
+
+    color: #9b6878;
+
+    margin-bottom: 5px;
+
+}
+
+
+.gallery-buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+}
+
+
+.gallery-buttons button {
+
+    margin-top: 10px;
+
+    width: 50px;
+
+    height: 45px;
+
+    padding: 0;
+
+    font-size: 22px;
+
+}
+
+/* Final */
+
+.final-box {
+
+    width: 100%;
+
+    max-width: 600px;
+
+    text-align: center;
+
+    background: rgba(255,255,255,0.85);
+
+    padding: 45px 30px;
+
+    border-radius: 30px;
+
+    box-shadow:
+        0 20px 60px rgba(120,40,70,0.2);
+}
+
+
+.big-heart {
+
+    font-size: 80px;
+
+    animation: heartbeat 1.5s infinite;
+}
+
+
+.final-intro {
+
+    font-size: 18px;
+
+    margin-bottom: 10px;
+}
+
+
+#finalMessage {
+
+    margin-top: 30px;
+
+    animation: fadeIn 2s ease;
+}
+
+
+#finalMessage p {
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    margin: 15px 0;
+}
+
+
+#finalMessage h2 {
+
+    font-family: 'Dancing Script', cursive;
+
+    font-size: 38px;
+
+    color: #b8325c;
+
+    margin-top: 25px;
+}
+
+
+.signature {
+
+    font-family: 'Dancing Script', cursive;
+
+    font-size: 22px !important;
+}
+
+
+
+/* Hidden */
+
+.hidden {
+    display: none;
+}
+
+
+
+/* Floating Hearts */
+
+.heart-float {
+
+    position: fixed;
+
+    bottom: -20px;
+
+    font-size: 20px;
+
+    pointer-events: none;
+
+    animation: floatUp 6s linear forwards;
+
+    opacity: 0.7;
+}
+
+
+
+/* Animations */
+
+@keyframes heartbeat {
+
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.15);
+    }
+}
+
+
+@keyframes cardAppear {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes floatUp {
+
+    from {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0.8;
+    }
+
+    to {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 45px;
+    }
+
+    .love-card h2 {
+        font-size: 35px;
+    }
+
+    .welcome-box,
+    .final-box,
+    .love-card {
+        padding: 35px 22px;
+    }
+
+}
+/* Our Story Timeline */
+
+.timeline {
+    text-align: left;
+    margin-top: 25px;
+    position: relative;
+    padding-left: 20px;
+}
+
+
+.timeline::before {
+    content: "";
+    position: absolute;
+
+    left: 31px;
+    top: 10px;
+    bottom: 10px;
+
+    width: 2px;
+
+    background: #f2b5c5;
+}
+
+
+.timeline-item {
+    position: relative;
+
+    margin-bottom: 25px;
+
+    padding-left: 45px;
+
+    animation: fadeIn 0.8s ease;
+}
+
+
+.timeline-heart {
+    position: absolute;
+
+    left: -5px;
+    top: 0;
+
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: white;
+
+    border-radius: 50%;
+
+    font-size: 20px;
+
+    z-index: 2;
+}
+
+
+.timeline-item h3 {
+    font-family: 'Dancing Script', cursive;
+
+    font-size: 27px;
+
+    color: #b8325c;
+
+    margin-bottom: 5px;
+}
+
+
+.timeline-item {
+    position: relative;
+
+    margin-bottom: 25px;
+
+    padding-left: 45px;
+
+    opacity: 0;
+
+    transform: translateY(30px);
+
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s ease;
+}
+
+
+.timeline-item.show {
+    opacity: 1;
+
+    transform: translateY(0);
+}
+/* Beginning Card */
+
+.beginning-card {
+    text-align: center;
+    margin-top: 25px;
+}
+
+
+.beginning-year {
+    font-family: 'Dancing Script', cursive;
+
+    font-size: 45px;
+
+    color: #b8325c;
+
+    margin-bottom: 5px;
+}
+
+
+.beginning-icon {
+    font-size: 45px;
+
+    margin: 10px 0;
+
+    animation: heartbeat 1.5s infinite;
+}
+
+
+.beginning-card h3 {
+    font-family: 'Dancing Script', cursive;
+
+    font-size: 32px;
+
+    color: #b8325c;
+
+    margin-bottom: 15px;
+}
+
+
+.beginning-card p {
+    font-size: 15px !important;
+
+    line-height: 1.7 !important;
+
+    margin: 12px 0;
+}
+
+
+.special-line {
+    color: #8b5364;
+
+    font-style: italic;
+}
+
+
+.beginning-ending {
+    margin-top: 25px;
+
+    padding: 15px;
+
+    background: #fff0f5;
+
+    border-radius: 15px;
+
+    font-family: 'Dancing Script', cursive;
+
+    font-size: 22px;
+
+    color: #b8325c;
+}
+
+/* Card 2 - Things I Love About You */
+
+.reasons-intro {
+    text-align: center;
+}
+
+.reasons-intro p {
+    font-size: 15px !important;
+    line-height: 1.7 !important;
+    margin: 12px 0;
+}
+
+.sorry-line {
+    color: #b8325c;
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px !important;
+}
+
+.tap-hint {
+    font-size: 14px !important;
+    color: #9b6878;
+    margin-top: 20px !important;
+}
+
+
+.reason-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+    margin: 25px 0;
+}
+
+
+.reason-button {
+    margin: 0;
+    width: 100%;
+    height: 55px;
+    padding: 0;
+
+    background: #fff0f5;
+    color: #b8325c;
+
+    box-shadow: none;
+
+    font-size: 20px;
+
+    transition: 0.3s ease;
+}
+
+
+.reason-button span {
+    display: block;
+    font-size: 11px;
+    margin-top: -2px;
+}
+
+
+.reason-button:hover,
+.reason-button.opened {
+
+    background: #d94f76;
+    color: white;
+
+    transform: translateY(-3px);
+}
+
+
+.reason-display {
+
+    min-height: 120px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #fff7fa;
+
+    border-radius: 18px;
+
+    padding: 18px;
+
+    text-align: center;
+}
+
+
+.reason-display p {
+    font-size: 15px !important;
+    line-height: 1.7 !important;
+}
+
+
+.reason-text {
+    animation: fadeIn 0.5s ease;
+}
+
+
+@media (max-width: 600px) {
+
+    .reason-grid {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 5px;
+    }
+
+    .reason-button {
+        font-size: 17px;
+    }
+
+}
+/* Card 6 - Guess Game */
+
+.guess-game {
+    text-align: center;
+}
+
+.guess-question {
+    font-family: 'Dancing Script', cursive;
+
+    font-size: 27px !important;
+
+    color: #b8325c;
+
+    line-height: 1.5 !important;
+
+    margin-bottom: 25px;
+}
+
+
+.guess-options {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+
+.guess-options button {
+
+    width: 100%;
+
+    margin: 0;
+
+    padding: 14px;
+
+    background: #fff0f5;
+
+    color: #b8325c;
+
+    box-shadow: none;
+
+    border: 2px solid transparent;
+
+    transition: 0.3s ease;
+}
+
+
+.guess-options button:hover:not(:disabled) {
+
+    background: #d94f76;
+
+    color: white;
+
+    transform: translateY(-2px);
+}
+
+
+.guess-options button:disabled {
+
+    cursor: default;
+
+    opacity: 0.8;
+}
+
+
+.guess-result {
+
+    display: none;
+
+    margin-top: 25px;
+
+    padding: 18px;
+
+    background: #fff7fa;
+
+    border-radius: 18px;
+
+    line-height: 1.7;
+
+}
+
+
+.guess-result.show {
+
+    display: block;
+
+    animation: fadeIn 0.6s ease;
+}
+
+
+.guess-result p {
+
+    font-size: 15px !important;
+}
+
+
+/* Card 7 */
+
+.final-card-message {
+
+    text-align: center;
+
+    line-height: 1.7;
+}
+
+
+.final-heart {
+
+    font-size: 55px;
+
+    margin: 10px 0 20px;
+
+    animation: heartbeat 1.5s infinite;
+}
+
+
+.final-card-message p {
+
+    font-size: 15px !important;
+
+    margin: 15px 0;
+}
+
+
+.final-highlight {
+
+    font-family: 'Dancing Script', cursive;
+
+    font-size: 25px !important;
+
+    color: #b8325c;
+}
+
+
+.ready-line {
+
+    margin-top: 25px;
+
+    padding: 15px;
+
+    background: #fff0f5;
+
+    border-radius: 15px;
+
+    font-family: 'Dancing Script', cursive;
+
+    font-size: 23px;
+
+    color: #b8325c;
+
+    animation: gentlePulse 2s infinite;
+}
+/* ========================================= */
+/* DIFFERENT DESIGN FOR EACH CARD ❤️ */
+/* ========================================= */
+
+
+/* General */
+
+.love-card {
+    transition: all 0.5s ease;
+}
+
+
+/* 🌸 CARD 1 — Our Beginning */
+
+.love-card.card-1 {
+    background: #fff8f2 !important;
+    border-radius: 35px !important;
+    border: 2px solid #f3c6d2 !important;
+}
+
+
+/* 💗 CARD 2 — Things I Love */
+
+.love-card.card-2 {
+    background: #fff0f6 !important;
+    border-radius: 25px !important;
+    border: 2px solid #f2a8bd !important;
+}
+
+
+/* 📸 CARD 3 — Memories */
+
+.love-card.card-3 {
+    background: #fffdf5 !important;
+    border-radius: 8px !important;
+    border: 3px solid #e8d8bd !important;
+}
+
+
+/* 🕰️ CARD 4 — Our Story */
+
+.love-card.card-4 {
+    background: #fff7ef !important;
+    border-radius: 20px !important;
+    border: 2px solid #e8c8b5 !important;
+}
+
+
+/* 🥰 CARD 5 — Little Things */
+
+.love-card.card-5 {
+    background: #faf0ff !important;
+    border-radius: 30px !important;
+    border: 2px solid #d9b5e8 !important;
+}
+
+
+/* 👀 CARD 6 — Guess Game */
+
+.love-card.card-6 {
+    background: #f1f7ff !important;
+    border-radius: 25px !important;
+    border: 3px dashed #9db9d9 !important;
+}
+
+
+/* 💌 CARD 7 — Final */
+
+.love-card.card-7 {
+    background: #fff0f5 !important;
+    border-radius: 40px !important;
+    border: 2px solid #d94f76 !important;
+}
+.background-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+
+    /* These dimensions are reversed because we rotate the video */
+    width: 100vh;
+    height: 100vw;
+
+    object-fit: cover;
+
+   transform: translate(-50%, -50%) rotate(270deg);
+    z-index: -2;
+    pointer-events: none;
+}
+.video-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.35);
+    z-index: -1;
+    pointer-events: none;
+}
+.signature {
+    margin-top: 25px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 24px;
+    color: #b8325c;
+    line-height: 1.5;
+}
